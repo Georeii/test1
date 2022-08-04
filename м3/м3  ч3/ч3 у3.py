@@ -1,4 +1,4 @@
-list2 = [56, 9, 11, 2]
+list2 = [900, 100,]
 
 
 def max_number(list):
