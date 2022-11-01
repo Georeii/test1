@@ -1,23 +1,23 @@
 import json
 
 
-class Model():
+class Model:
+    def __init__(self):
+        self.title = "Ты и я (Александру I)"
+        self.text = "Ты богат, я очень беден;"
+        self.author = "Александр Пушкин"
 
-    def __init__(self, title, text, author):
-        self.title = title
-        self.text = text
-        self.author = author
-
-    def save(self):
+    def _save(self,):
         with open('save_Model.json', "r") as file:
             file_model = json.load(file)
-            file_model.append(self.title)
-            file_model.append(self.text)
-            file_model.append(self.author)
+            file_model = file_model | s.__dict__
+            print(file_model,s.__dict__)
             with open('save_Model.json', "w") as file:
                 json.dump(file_model, file)
 
+    def _save1(self):
+        pass
 
-s = Model("Ты и я (Александру I)", "Ты богат, я очень беден;", "Александр Пушкин")
 
-s.save()
+s = Model()
+s._save()
