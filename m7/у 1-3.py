@@ -36,3 +36,9 @@ for j in soup.find_all("table", class_="mfd-table mfd-currency-table"):
 
 plt.plot(data_graf, usd_graf, 'ro')
 plt.show()
+
+
+
+
+
+
